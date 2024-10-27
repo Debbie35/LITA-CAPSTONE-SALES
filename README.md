@@ -20,13 +20,15 @@
   1. Data visualisation
   2.  Report
    
-### EXPLORATORY DATA ANALYSIS (WITH EXCEL)
+### EXPLORATORY DATA ANALYSIS  DATA ANALYSIS
+This is where I include some line of code, queries or some of the DAX expressions used during th analysis;
+###WITH EXCEL
 In the initial phase of data cleaning and preparations, I perform the following actions;
   - Data loading and inspection
   - Handling missing variables
   - Data Cleaning and Formatting
   - visualization of key findings
-## To se pivot table to summarize total sales by product
+## To use pivot table to summarize total sales by product
 - Highlight o rclick on any cell within your data range
 - Go to the insert Tab
 - Click on the pivotbtable button to open a dialog box
@@ -49,19 +51,38 @@ In the initial phase of data cleaning and preparations, I perform the following 
 6. Sum of total revenue by Region  
 ![SUM OF TOTAL REVENUE BY REGION](https://github.com/user-attachments/assets/3eaa5f71-eb29-4214-b85c-13709dbbd48e)
 
+  
 7. Sum of total Revenue by Region using excel function SUMIF
-   WHERE;
-  -  Range is the range of cells to evaluate, in this sense region
-  -  Criteria the conition that must be met (can be any of the 4 regions in this analysis- )
+# =SUMIF(range,criteria,[sum_range])
+WHERE;
+  -  Range : the range of cells to evaluate, in this sense region
+  -  Criteria: the conition that must be met (can be any of the 4 regions in this analysis- )
+  -  Sum_range:the actual cell to sum
     
-```excel
-=SUMIF(range,criteria,[sum_range])
+```EXCEL
 =SUMIF(D2:D50001,D2,H2:H50001)
 ```
-
 <img width="251" alt="TOTAL REVENUE BY REGION USING EXCEL FUNCTION SUMIF " src="https://github.com/user-attachments/assets/1138da3a-7ac4-4fae-9a31-20a8faf4f1fb">
 
+8.Average sales per product 
+# =AVERAGEIF(range,criteria,[average_range])
+WHERE;
+- Range : the range of cells to evaluate, in this sense product
+- Criteria: the condition that must be met (can be any of the 6 products in this analysis)
+-  Average_range:the actual cell to average
 
+```EXCEL
+=AVERAGEIF(C2:C50001,C49988,H2:H50001)
+```
+<img width="294" alt="AVERAGE SALES BY PRODUCT USING EXCEL FUNCTION AVERAGE IF" src="https://github.com/user-attachments/assets/c0d8eaa2-f494-4881-8d53-cd560bda9c2c">
+
+9. Percentage Revenue by Region
+
+<img width="320" alt="PERCENTAGE REVENUE BY REGION" src="https://github.com/user-attachments/assets/d52e0097-479b-4a11-88bc-aa482ef70255">
+
+10. Percentage sales by product
+    
+<img width="281" alt="SALES PER PRODUCT IN PERCENTAGE" src="https://github.com/user-attachments/assets/f5e9b2a9-5d99-4e9c-a3c1-70a187562505">
 
 ### EXPLORATORY DATA ANALYSIS (WITH SQL)
  - Convert excel sheet to csv
@@ -146,8 +167,7 @@ EDA involves the exploring of Data to answer some questions about the Data such 
 - percentage of total sales contributed by Each region
 - identify product with no sales in the last quarter
 
-### DATA ANALYSIS
-This is where I include some line of code, queries or some of the DAX expressions used during th analysis;
+
 
      
 

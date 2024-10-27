@@ -1,18 +1,21 @@
 # LITA-CLASS-PROJECT
 
-### PROJECT TITLE: LITA CAPSTONE DATA ANALYSIS
+### PROJECT TITLE: LITA CAPSTONE DATA ANALYSIS:SALES PERFORMANCE ANALYSIS
 
 ### PROJECT OVERVIEW
  In this project, I am tasked with analyzing the sales performance of a retail store. I will need to explore sales data to uncover key insights such as top-selling products, regional performance, and monthly sales trends. The goal is to produce an interactive Power BI dashboard that highlights these findings.
 
 ### DATA SOURCE
+- excel file
+- csv file
 
 ### TOOLS USED
 - Microsoft Excel [Download Here](https://www.microsoft.com)
   1. for Data Cleaning
   2. Analysis and
   3. visualization
-- SQL - Structured Query Language QUering of Data
+- SQL - Structured Query Language
+  1. QUering of Data
 - Power BI - Power Business Intelligent
   1. Data visualisation
   2.  Report
@@ -22,8 +25,10 @@ In the initial phase of data cleaning and preparations, I perform the following 
   1. Data loading and inspection
   2. Handling missing variables
   3. Data Cleaning and Formatting
+  4. visualization of key findings
 
-### EXPLORATORY DATA ANALYSIS
+### EXPLO<img 
+RATORY DATA ANALYSIS
 EDA involves the exploring of Data to answer some questions about the Data such as;
 - top-selling product
 - monthly sales trend

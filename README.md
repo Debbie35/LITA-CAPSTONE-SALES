@@ -19,19 +19,27 @@
 - Power BI - Power Business Intelligent
   1. Data visualisation
   2.  Report
-  
-### DATA CLEANING AND PREPARATIONS  
+   
+### EXPLORATORY DATA ANALYSIS (WITH EXCEL)
 In the initial phase of data cleaning and preparations, I perform the following actions;
-  1. Data loading and inspection
-  2. Handling missing variables
-  3. Data Cleaning and Formatting
-  4. visualization of key findings
-
-### EXPLORATORY DATA ANALYSIS
-. Convert excel sheet to csv
-.  Remove headers
-. import the csv to my sql
-. Ensure to format the the date column into YYY-MM-DD while importing the csv into my sql
+  - Data loading and inspection
+  - Handling missing variables
+  - Data Cleaning and Formatting
+  - visualization of key findings
+1. Use pivot table to summarize total sales by product
+    Column1	AVERAGE SALES PER PRODUCT
+SHIRT         =	326.67
+SHOE          =	308.75
+HAT             =	158.75
+SOCKS        =	121.67
+JACKET       =	140.00
+GLOVES      =	200.00
+TOTAL        =	1,255.83
+### EXPLORATORY DATA ANALYSIS (WITH SQL)
+ - Convert excel sheet to csv
+ - Remove headers
+ - import the csv to my sql
+ - Ensure to format the the date column into YYY-MM-DD while importing the csv into my sql
 1. Top selling product by total sales value
    ``` SQL
    SELECT Product, SUM(TotalSales) As TotalSales
@@ -79,6 +87,25 @@ GROUP BY CustomerID
 ORDER BY TotalPurchase DESC
 LIMIT 5;
 ```
+
+7. Percentage of total sales contributed by each region
+```SQL
+SELECT Region,
+SUM(TotalSales) As TotalSales,
+(SUN(TotalSaless)/(SELECTSUM(TotalSales)FROM orders)*100) As PercentageOfTotalSales
+FROM orders
+GROUP BY Region;
+```
+8. Products with no sale in the last quarter
+```SQL
+SELECT DISTINCT Product
+FROM orders
+WHERE Product NOT IN(
+SELECT Product
+FROM orders
+WHERE OrderDate>=DATE_SUB(CURDATE(),INTERVAL 3 MONTH)
+);
+```   
 EDA involves the exploring of Data to answer some questions about the Data such as;
 - top-selling product
 - monthly sales trend

@@ -26,15 +26,32 @@ In the initial phase of data cleaning and preparations, I perform the following 
   - Handling missing variables
   - Data Cleaning and Formatting
   - visualization of key findings
-1. Use pivot table to summarize total sales by product
-    Column1	AVERAGE SALES PER PRODUCT
-SHIRT         =	326.67
-SHOE          =	308.75
-HAT             =	158.75
-SOCKS        =	121.67
-JACKET       =	140.00
-GLOVES      =	200.00
-TOTAL        =	1,255.83
+## To se pivot table to summarize total sales by product
+- Highlight o rclick on any cell within your data range
+- Go to the insert Tab
+- Click on the pivotbtable button to open a dialog box
+- Select Data Range
+- Choose where to place the pivot table (a new worksheet or in the existing worksheet)
+- Build customize and format the table
+
+ 1. Summarize total sales by Product
+   <img width="206" alt="TOTAL SALES OR REVENUE BY PRODUCT" src="https://github.com/user-attachments/assets/e0b16da2-31fe-4ccc-ad01-e54a09fa6d40">
+
+2. Summarize total sales by Region
+  <img width="221" alt="TOTAL SALES BY REGION" src="https://github.com/user-attachments/assets/909f8f96-994c-44b3-9014-1df8a9270b12">
+
+4. Summarize total sales by Month   
+<img width="219" alt="SUM OF TOTAL REVENUE BY MONTH" src="https://github.com/user-attachments/assets/a4c72763-3507-424d-9485-92339d414fe2">
+
+5. Average Sales per product
+   <img width="581" alt="CAPSTONE AVERAGE SALES PER PRODUCT" src="https://github.com/user-attachments/assets/cc4835b7-a9dd-4827-bf37-720bbfdf0729">
+
+6. Sum of total revenue by Region  
+![SUM OF TOTAL REVENUE BY REGION](https://github.com/user-attachments/assets/3eaa5f71-eb29-4214-b85c-13709dbbd48e)
+
+
+
+
 ### EXPLORATORY DATA ANALYSIS (WITH SQL)
  - Convert excel sheet to csv
  - Remove headers

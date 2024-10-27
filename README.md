@@ -27,8 +27,13 @@ In the initial phase of data cleaning and preparations, I perform the following 
   3. Data Cleaning and Formatting
   4. visualization of key findings
 
-### EXPLO<img 
-RATORY DATA ANALYSIS
+### EXPLORATORY DATA ANALYSIS
+. Convert excel sheet to csv
+.  Remove headers
+. import the csv to my sql
+. Ensurevto format the the date column into YYY-MM-DD while importing the csv into my sql
+1. Retrieve the total sale for each product category
+ 
 EDA involves the exploring of Data to answer some questions about the Data such as;
 - top-selling product
 - monthly sales trend

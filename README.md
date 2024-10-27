@@ -49,6 +49,17 @@ In the initial phase of data cleaning and preparations, I perform the following 
 6. Sum of total revenue by Region  
 ![SUM OF TOTAL REVENUE BY REGION](https://github.com/user-attachments/assets/3eaa5f71-eb29-4214-b85c-13709dbbd48e)
 
+7. Sum of total Revenue by Region using excel function SUMIF
+   WHERE;
+  -  Range is the range of cells to evaluate, in this sense region
+  -  Criteria the conition that must be met (can be any of the 4 regions in this analysis- )
+    
+```excel
+=SUMIF(range,criteria,[sum_range])
+=SUMIF(D2:D50001,D2,H2:H50001)
+```
+
+<img width="251" alt="TOTAL REVENUE BY REGION USING EXCEL FUNCTION SUMIF " src="https://github.com/user-attachments/assets/1138da3a-7ac4-4fae-9a31-20a8faf4f1fb">
 
 
 

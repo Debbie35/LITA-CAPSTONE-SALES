@@ -28,8 +28,8 @@ In the initial phase of data cleaning and preparations, I perform the following 
   - Handling missing variables
   - Data Cleaning and Formatting
   - visualization of key findings
-## To use pivot table to summarize total sales by product
-- Highlight o rclick on any cell within your data range
+## To use pivot:
+- Highlight or click on any cell within your data range
 - Go to the insert Tab
 - Click on the pivotbtable button to open a dialog box
 - Select Data Range

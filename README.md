@@ -22,7 +22,7 @@
    
 ### EXPLORATORY DATA ANALYSIS  DATA ANALYSIS
 This is where I include some line of code, queries or some of the DAX expressions used during th analysis;
-###WITH EXCEL
+### WITH EXCEL
 In the initial phase of data cleaning and preparations, I perform the following actions;
   - Data loading and inspection
   - Handling missing variables

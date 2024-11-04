@@ -1,6 +1,6 @@
-# LITA-CLASS-PROJECT
+# LITA-CAPSTONE DATA ANALYSIS
 
-### PROJECT TITLE: LITA CAPSTONE DATA ANALYSIS:SALES PERFORMANCE ANALYSIS
+### PROJECT TITLE: SALES PERFORMANCE ANALYSIS
 
 ### PROJECT OVERVIEW
  In this project, I am tasked with analyzing the sales performance of a retail store. I will need to explore sales data to uncover key insights such as top-selling products, regional performance, and monthly sales trends. The goal is to produce an interactive Power BI dashboard that highlights these findings.

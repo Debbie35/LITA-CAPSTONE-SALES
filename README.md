@@ -38,12 +38,15 @@ In the initial phase of data cleaning and preparations, I perform the following 
 
  1. Summarize total sales by Product
    <img width="206" alt="TOTAL SALES OR REVENUE BY PRODUCT" src="https://github.com/user-attachments/assets/e0b16da2-31fe-4ccc-ad01-e54a09fa6d40">
-
+ 
 2. Summarize total sales by Region
   <img width="221" alt="TOTAL SALES BY REGION" src="https://github.com/user-attachments/assets/909f8f96-994c-44b3-9014-1df8a9270b12">
 
+
 4. Summarize total sales by Month   
 <img width="219" alt="SUM OF TOTAL REVENUE BY MONTH" src="https://github.com/user-attachments/assets/a4c72763-3507-424d-9485-92339d414fe2">
+
+
 
 5. Average Sales per product
    <img width="581" alt="CAPSTONE AVERAGE SALES PER PRODUCT" src="https://github.com/user-attachments/assets/cc4835b7-a9dd-4827-bf37-720bbfdf0729">
@@ -89,27 +92,33 @@ WHERE;
  - Remove headers
  - import the csv to my sql
  - Ensure to format the the date column into YYY-MM-DD while importing the csv into my sql
-1. Top selling product by total sales value
+
+ 1. Total sales for each product category  
+
+ ```SQL
+SELECT Product, SUM(Totalsales) As TotalSales
+FROM orders
+GROUP BY Product;
+```
+![sales 1](https://github.com/user-attachments/assets/4acd1fd2-ef59-4e6c-9c91-234a5b3f1095)
+
+2. Number of sales transaction in each region
+ ```SQL
+SELECT Region, COUNT(*)As NumberOfTransaction
+FROM Orders
+GROUP BY Region;
+```
+![sales 2](https://github.com/user-attachments/assets/1ba41b0a-acf6-47ac-a26e-792328fefe2b)
+
+3. Top selling product by total sales value
    ``` SQL
    SELECT Product, SUM(TotalSales) As TotalSales
    FROM orders
    GROUP BY TotalSales DESC
    LIMIT 1;
    ```
- 2. Total sales for each product category  
+   ![sales 3](https://github.com/user-attachments/assets/4d85bee5-0b57-40a6-a918-95083576f3d6)
 
- ```SQL
-SELECT Product, SUM(Totalsales) As TotalSales
-FROM orders
-GROUP BY Product;
-
-```
-3. Number of sales transaction in each region
- ```SQL
-SELECT Region, COUNT(*)As NumberOfTransaction
-FROM Orders
-GROUP BY Region;
-```
 4.Total revenue per product
 
 ```SQL
@@ -117,7 +126,9 @@ SELECT Product, SUM(TotalSales)As TotalRevenue
 FROM Orders
 GROUP BY Product;
 ```
-5.Monthly sales total for the current year
+![sales 4](https://github.com/user-attachments/assets/b56b1767-8b1d-4578-bddf-1d7ec2e85b8c)
+
+5. Monthly sales total for the current year
 
 ```sql
 SELECT MONTH(OrderDate)As Month, SUM (TotalSales)As MonthlySales
@@ -126,6 +137,7 @@ WHERE YEAR(OrderDate)=YEAR(CURDATED())
 GROUP BY MONTH(OrderDate)
 ORDER BY MONTH;
 ```
+![sales 5](https://github.com/user-attachments/assets/e321ae74-2adf-4473-9fcc-4deec2203766)
 
 6. Top 5 customer by totalpurchase amount
 
@@ -136,6 +148,8 @@ GROUP BY CustomerID
 ORDER BY TotalPurchase DESC
 LIMIT 5;
 ```
+![sales 6](https://github.com/user-attachments/assets/5ed6b234-dc3b-48d4-ae04-944af1ca5945)
+
 
 7. Percentage of total sales contributed by each region
 ```SQL
@@ -145,6 +159,8 @@ SUM(TotalSales) As TotalSales,
 FROM orders
 GROUP BY Region;
 ```
+![sales 7](https://github.com/user-attachments/assets/90e895c4-d3e9-4abc-a341-44955db53eb7)
+
 8. Products with no sale in the last quarter
 ```SQL
 SELECT DISTINCT Product
@@ -154,7 +170,9 @@ SELECT Product
 FROM orders
 WHERE OrderDate>=DATE_SUB(CURDATE(),INTERVAL 3 MONTH)
 );
-```   
+```
+ ![sales 8](https://github.com/user-attachments/assets/b17474e6-2218-4a07-94ea-22677449274f)
+
 EDA involves the exploring of Data to answer some questions about the Data such as;
 - top-selling product
 - monthly sales trend

@@ -173,21 +173,46 @@ WHERE OrderDate>=DATE_SUB(CURDATE(),INTERVAL 3 MONTH)
 ```
  ![sales 8](https://github.com/user-attachments/assets/b17474e6-2218-4a07-94ea-22677449274f)
 
-EDA involves the exploring of Data to answer some questions about the Data such as;
-- top-selling product
-- monthly sales trend
-- sales for each product category
-- number of sales transaction in each region
-- highest selling product by total sales value
-- total revenue per product
-- monthly sales total for the current year
-- the top 5 customers by total purchase amount
-- percentage of total sales contributed by Each region
-- identify product with no sales in the last quarter
+ ### DATA VISUALIZATION WITH POWER BI
+ # KEY INSIGHTS;
+ 1. Sales Overview
+ 2. Top-performing products
+ 3. Regional breakdown
 
+# SALES OVERVIEW
+1. Key Performance Indicator (KPI): A calculated measure in DAX was created for Total sales, Total order and Average order value.
+<img width="472" alt="measure 1" src="https://github.com/user-attachments/assets/162907be-1923-4d1c-9afe-fd453774e94d">
 
+  <img width="347" alt="MEASURE 2" src="https://github.com/user-attachments/assets/7cc8457e-e613-42d3-ba33-18088bbc163c">
 
-     
+<img width="351" alt="measure 3" src="https://github.com/user-attachments/assets/038c3d6c-3783-4a92-8681-7d4c839eaaa8">
 
-   
-   
+  Afterwards the three measures were visualized on a card using text box
+<img width="492" alt="CARD FROM MEASURES" src="https://github.com/user-attachments/assets/c0d86c1e-6dd1-48b3-b870-19e700fb9b1d">
+
+2. Sales Trend Overtime using a line chart
+<img width="476" alt="SALES TREND" src="https://github.com/user-attachments/assets/35cd8873-c452-454b-8e5d-04c52a6458de">
+
+use the TOOLTIPS for additional information (total order and average order)
+
+<img width="476" alt="Tooltips (3)" src="https://github.com/user-attachments/assets/665d9386-10a6-45e3-812d-4148d2fd760e">
+
+use SLICER for Dynamic Time Periods
+
+<img width="152" alt="slicer for dynamic time periods" src="https://github.com/user-attachments/assets/99237b65-c28d-4ea9-af0e-b623a87183c5">
+
+ 3. Sales by product type using a pie chart
+<img width="411" alt="SALES BY PRODUCT TYPE" src="https://github.com/user-attachments/assets/493c2761-9a9f-4199-aca9-ecb4e565dbfb">
+
+# Top Performing Product Session
+
+ 1. Top 3- product by sales using a pie chart
+ <img width="419" alt="TOP 3 PERFORMING PRODUCTS" src="https://github.com/user-attachments/assets/661b8822-2613-43ed-b2a6-e912a1d26279">
+
+# REGIONAL BREAKDOWN
+Map Visualization
+<img width="455" alt="MAP BASE ON REGION" src="https://github.com/user-attachments/assets/7c26d9b9-8cc0-4f15-8568-94f738dbad2d">
+
+A side by side comparison of sales value for each region using pie chart
+<img width="440" alt="Sales by region" src="https://github.com/user-attachments/assets/000c5f96-2420-4599-a5db-b47f018c56ae">
+

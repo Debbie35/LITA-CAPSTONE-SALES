@@ -183,10 +183,13 @@ WHERE OrderDate>=DATE_SUB(CURDATE(),INTERVAL 3 MONTH)
 1. Key Performance Indicator (KPI): A calculated measure in DAX was created for Total sales, Total order and Average order value.
 <img width="472" alt="measure 1" src="https://github.com/user-attachments/assets/162907be-1923-4d1c-9afe-fd453774e94d">
 
+Total Sales
   <img width="347" alt="MEASURE 2" src="https://github.com/user-attachments/assets/7cc8457e-e613-42d3-ba33-18088bbc163c">
 
+Total Order
 <img width="351" alt="measure 3" src="https://github.com/user-attachments/assets/038c3d6c-3783-4a92-8681-7d4c839eaaa8">
 
+Average Order Value
   Afterwards the three measures were visualized on a card using text box
 <img width="492" alt="CARD FROM MEASURES" src="https://github.com/user-attachments/assets/c0d86c1e-6dd1-48b3-b870-19e700fb9b1d">
 
@@ -210,7 +213,8 @@ use SLICER for Dynamic Time Periods
  <img width="419" alt="TOP 3 PERFORMING PRODUCTS" src="https://github.com/user-attachments/assets/661b8822-2613-43ed-b2a6-e912a1d26279">
 
 # REGIONAL BREAKDOWN
-Map Visualization
+ Map Visualization
+ 
 <img width="455" alt="MAP BASE ON REGION" src="https://github.com/user-attachments/assets/7c26d9b9-8cc0-4f15-8568-94f738dbad2d">
 
 A side by side comparison of sales value for each region using pie chart
